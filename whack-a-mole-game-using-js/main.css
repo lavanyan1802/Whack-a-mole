@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-block-size: 100vh;
+    inline-size: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 232, 4);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* inline-size: 50rem; */
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.main h1{
+    font-size: 54px;
+    color: white;
+}
+
+.main h2{
+    display: inline-block;
+    background: rgb(219, 14, 14);
+    border-radius: 20px;
+    margin: 6px;
+    padding: 12px 5px;
+}
+
+button{
+    margin: 6px;
+    inline-size: 12rem;
+    padding: 12px 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(232, 161, 48);
+    box-shadow: 1px 1px 3px black;
+}
+
+#pauseGame{
+    display: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.square{
+    inline-size: 180px;
+    block-size: 160px;
+    border: 1px solid black;
+    box-shadow: 1px 3px 5px rgb(150, 45, 255);
+    margin: 10px;
+}
+
+.mole{
+    background: url('../../Assets/mole.png');
+    background-size: cover;
+}
